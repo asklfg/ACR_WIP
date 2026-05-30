@@ -41,10 +41,13 @@
       "Back/Pelvis": "back and pelvis details here",
       "Extremities": "extremities details here"
     },
-    "Remarks": "refusal remarks here"  
+    "Remarks": "refusal remarks here"
   },
   "Generic Procedures": {
     "PPE": "PPE details here",
-    "Patient Assessment": "IV access details here"
+    "Patient Assessment": "Patient assessment details here",
+    "Patient Transport": "Patient transport details here",
+    "Triage Report": "Triage details here",
+    "Patient Offloaded": "Patient offload details here"
   }
 }
