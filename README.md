@@ -170,7 +170,6 @@
     </div>
 
 </body>
-    <script type="text/javascript" src="Data.json"></script>
     <script>
         // Display data with copy functionality
         function displayArray(obj, container) {
