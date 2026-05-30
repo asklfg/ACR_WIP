@@ -171,6 +171,26 @@
 
 </body>
     <script>
+        // Load Data.json
+        let AssessmentContentData = {};
+        async function loadData() {
+            try {
+                const response = await fetch('Data.json');
+                const data = await response.json();
+                // Map Data.json structure to UI
+                AssessmentContentData = {
+                    'General_ACR': data.General_ACR,
+                    'Trauma_ACR': data.Trauma_ACR,
+                    'Respiratory_ACR': data.Respiratory_ACR,
+                    'Refusal_ACR': data.Refusal_ACR,
+                };
+                // Initialize default tab after data loads
+                attachCopyListeners();
+                document.getElementById("defaultOpen").click();
+            } catch (error) {
+                console.error('Error loading Data.json:', error);
+            }
+        } 
         // Display data with copy functionality
         function displayArray(obj, container) {
             container.innerHTML = '';
@@ -187,7 +207,7 @@
                     container.appendChild(itemDiv);
                 }
             });
-        }
+        }  
         // Tab switching
         function openTab(evt, tabName, group = 'tab') {
             const tabcontent = document.getElementsByClassName(group + "content");
@@ -210,7 +230,7 @@
                 btn.removeEventListener('click', handleCopy);
                 btn.addEventListener('click', handleCopy);
             });
-        }
+        }  
         function handleCopy() {
             const key = this.dataset.key;
             const input = document.getElementById(`input-${key}`);
@@ -218,7 +238,7 @@
                 input.select();
                 navigator.clipboard.writeText(input.value);
             }
-        }
+        }  
         function updateAncestorPanelHeights(panel) {
             // Walk up the DOM tree and update each ancestor panel
             let current = panel.parentElement;            
@@ -231,60 +251,55 @@
                 // Move to next level up
                 current = ancestorPanel.parentElement;
             }
-        }
+        }   
         function openAccordion(evt, group = 'accordion') {
             const currentAccordion = evt.currentTarget;
             const currentPanel = currentAccordion.nextElementSibling;
             const wasActive = currentAccordion.classList.contains("active");
-    // Only target accordion buttons within the same immediate parent container.
-    // This allows nested accordions to function independently.
-    const container = currentAccordion.parentElement;
-    const accordions = Array.from(container.children).filter(el => el.classList.contains(group))
-    // Close all sibling accordions in this container
-    accordions.forEach((accordion) => {
-        accordion.classList.remove("active");
-        const panel = accordion.nextElementSibling
-        if (panel) {
-            panel.style.maxHeight = null;
-        }
-    })
-    // Re-open the clicked accordion if it was not already active
-    if (!wasActive) {
-        currentAccordion.classList.add("active");
-        if (currentPanel) {
-            currentPanel.style.maxHeight =
-                currentPanel.scrollHeight + "px";
-            // Update ancestor panels immediately and multiple times to catch all transitions
-            updateAncestorPanelHeights(currentPanel);
-            setTimeout(() => updateAncestorPanelHeights(currentPanel), 50);
-            setTimeout(() => updateAncestorPanelHeights(currentPanel), 150);
-            setTimeout(() => updateAncestorPanelHeights(currentPanel), 300);
-        }
-    } else {
-        // If closing the accordion, collapse it
-        if (currentPanel) {
-            currentPanel.style.maxHeight = null;
-            // Update ancestor panels after closing
-            updateAncestorPanelHeights(currentPanel);
-            setTimeout(() => updateAncestorPanelHeights(currentPanel), 50);
-            setTimeout(() => updateAncestorPanelHeights(currentPanel), 150);
-        }
-    }
-}     
-        // General ACR Menu Functions
-        const AssessmentContentData = {
-            'General_ACR': General_ACR.Json,
-            'Trauma_ACR': {...PHYSICAL_EXAM.Trauma,...CSM.Good_CSM,...CSM.Poor_CSM},
-            'Respiratory_ACR': {...AirwayBreathing},
-            'Refusal_ACR': {...REMARKS.GeneralRemarks},
-        }
+            // Only target accordion buttons within the same immediate parent container.
+            // This allows nested accordions to function independently.
+            const container = currentAccordion.parentElement;
+            const accordions = Array.from(container.children).filter(el => el.classList.contains(group));
+            // Close all sibling accordions in this container
+            accordions.forEach((accordion) => {
+                accordion.classList.remove("active");
+                const panel = accordion.nextElementSibling;
+                if (panel) {
+                    panel.style.maxHeight = null;
+                }
+            });
+            // Re-open the clicked accordion if it was not already active
+            if (!wasActive) {
+                currentAccordion.classList.add("active");
+                if (currentPanel) {
+                    currentPanel.style.maxHeight = currentPanel.scrollHeight + "px";
+                    // Update ancestor panels immediately and multiple times to catch all transitions
+                    updateAncestorPanelHeights(currentPanel);
+                    setTimeout(() => updateAncestorPanelHeights(currentPanel), 50);
+                    setTimeout(() => updateAncestorPanelHeights(currentPanel), 150);
+                    setTimeout(() => updateAncestorPanelHeights(currentPanel), 300);
+                }
+            } else {
+                // If closing the accordion, collapse it
+                if (currentPanel) {
+                    currentPanel.style.maxHeight = null;
+                    // Update ancestor panels after closing
+                    updateAncestorPanelHeights(currentPanel);
+                    setTimeout(() => updateAncestorPanelHeights(currentPanel), 50);
+                    setTimeout(() => updateAncestorPanelHeights(currentPanel), 150);
+                }
+            }
+        }        
+        // Show assessment content from loaded Data.json
         function showAssessmentContent(event, category) {
             event.preventDefault();            
             // Update content area
             const contentArea = document.getElementById('AssessmentContentArea');
             contentArea.innerHTML = '';          
             // Display the data using the displayArray function
-            displayArray(AssessmentContentData[category], contentArea);           
+            if (AssessmentContentData[category]) {
+                displayArray(AssessmentContentData[category], contentArea);
+            }
             // Re-attach copy listeners to newly created buttons
             attachCopyListeners();          
             // Update active menu item styling
@@ -293,7 +308,7 @@
                 link.classList.remove('active');
             });
             event.target.classList.add('active');
-        }
+        }       
         function filterAssessmentMenu() {
             const input = document.getElementById('AssessmentSearch');
             const filter = input.value.toUpperCase();
@@ -307,9 +322,8 @@
                     li[i].style.display = 'none';
                 }
             }
-        }
-        // Attach copy listeners and set default tab
-        attachCopyListeners();
-        document.getElementById("defaultOpen").click();
+        }       
+        // Load data when page loads
+        window.addEventListener('DOMContentLoaded', loadData);
     </script>
 </html>
