@@ -1,1 +1,50 @@
-
+{
+  "General_ACR": {
+    "Appearance": "appearance details here",
+    "Physical Exam": {
+      "Head/Neck": "head and neck details here",
+      "Chest": "chest details here",
+      "Abdomen": "abdomen details here",
+      "Back/Pelvis": "back and pelvis details here",
+      "Extremities": "extremities details here"
+    },
+    "Remarks": "general remarks here"
+  },
+  "Trauma_ACR": {
+    "Appearance": "appearance details here",
+    "Physical Exam": {
+      "Head/Neck": "head and neck details here",
+      "Chest": "chest details here",
+      "Abdomen": "abdomen details here",
+      "Back/Pelvis": "back and pelvis details here",
+      "Extremities": "extremities details here"
+    },
+    "Remarks": "trauma remarks here"
+  },
+  "Respiratory_ACR": {
+    "Appearance": "appearance details here",
+    "Physical Exam": {
+      "Head/Neck": "head and neck details here",
+      "Chest": "chest details here",
+      "Abdomen": "abdomen details here",
+      "Back/Pelvis": "back and pelvis details here",
+      "Extremities": "extremities details here"
+    },
+    "Remarks": "respiratory remarks here"
+  },
+  "Refusal_ACR": {
+    "Appearance": "appearance details here",
+    "Physical Exam": {
+      "Head/Neck": "head and neck details here",
+      "Chest": "chest details here",
+      "Abdomen": "abdomen details here",
+      "Back/Pelvis": "back and pelvis details here",
+      "Extremities": "extremities details here"
+    },
+    "Remarks": "refusal remarks here"  
+  },
+  "Generic Procedures": {
+    "PPE": "PPE details here",
+    "Patient Assessment": "IV access details here"
+  }
+}
