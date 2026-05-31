@@ -1,4 +1,4 @@
-{
+{"ACR_Data": {
   "General_ACR": {
     "Appearance": "appearance details here",
     "Physical Exam": {
@@ -42,7 +42,8 @@
       "Extremities": "extremities details here"
     },
     "Remarks": "refusal remarks here"
-  },
+  }
+},
   "Generic Procedures": {
     "PPE": "PPE details here",
     "Patient Assessment": "Patient assessment details here",
