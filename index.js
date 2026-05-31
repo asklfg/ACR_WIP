@@ -7,7 +7,22 @@ document.addEventListener("DOMContentLoaded", (e) => {
   })
   .catch(error => console.error('Error loading JSON:', error));
 });
-
+// Tab switching
+function openTab(evt, tabName, group = 'tab') {
+const tabcontent = document.getElementsByClassName(group + "content");
+for (let i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+const tablinks = document.getElementsByClassName(group + "links");
+for (let i = 0; i < tablinks.length; i++) {
+tablinks[i].classList.remove("active");
+}
+const tab = document.getElementById(tabName);
+if (tab) {
+tab.style.display = "block";
+evt.currentTarget.classList.add("active");
+}
+}
 let AssessmentContentData = {};
 async function loadData() {
 try {
@@ -44,22 +59,6 @@ container.appendChild(itemDiv);
 }
 });
 }  
-// Tab switching
-function openTab(evt, tabName, group = 'tab') {
-const tabcontent = document.getElementsByClassName(group + "content");
-for (let i = 0; i < tabcontent.length; i++) {
-tabcontent[i].style.display = "none";
-}
-const tablinks = document.getElementsByClassName(group + "links");
-for (let i = 0; i < tablinks.length; i++) {
-tablinks[i].classList.remove("active");
-}
-const tab = document.getElementById(tabName);
-if (tab) {
-tab.style.display = "block";
-evt.currentTarget.classList.add("active");
-}
-}
 // Copy to clipboard
 function attachCopyListeners() {
 document.querySelectorAll('.copy-btn').forEach(btn => {
