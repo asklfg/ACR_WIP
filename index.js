@@ -91,7 +91,6 @@ const wrapper = document.createElement('div');
 wrapper.innerHTML = accordionHTML;
 interventionsTab.appendChild(wrapper);
 }
-
 // Tab switching
 function openTab(evt, tabName, group = 'tab') {
 const tabcontent = document.getElementsByClassName(group + "content");
