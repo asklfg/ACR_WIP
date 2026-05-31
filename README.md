@@ -31,9 +31,9 @@
 </div>
 <div id="Interventions_TAB" class="tabcontent">   
 </div>
-    <div id="Demographics_TAB" class="tabcontent">
-        <h3>Demographics</h3>
-    </div>
+<div id="Demographics_TAB" class="tabcontent">
+    <h3>Demographics</h3>
+</div>
+    <script src="Index.js"></script>
 </body>
-<script src="Index.js"></script>
 </html>
