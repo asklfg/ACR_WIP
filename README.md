@@ -168,6 +168,6 @@
     <div id="Demographics_TAB" class="tabcontent">
         <h3>Demographics</h3>
     </div>
-    <script src="index.js"></script>
+    <script src="Index.js"></script>
 </body>
 </html>

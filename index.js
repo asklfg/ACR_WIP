@@ -20,6 +20,10 @@ AssessmentContentData = {
 'Respiratory_ACR': data.Respiratory_ACR,
 'Refusal_ACR': data.Refusal_ACR,
 };
+// Populate interventions from JSON
+if (data.Interventions) {
+populateInterventions(data.Interventions);
+}
 // Initialize default tab after data loads
 attachCopyListeners();
 document.getElementById("defaultOpen").click();
@@ -44,6 +48,51 @@ container.appendChild(itemDiv);
 }
 });
 }  
+// Generate accordion HTML recursively from JSON data
+function generateAccordionHTML(data, parentId = '') {
+let html = '';
+let counter = 0;
+
+Object.entries(data).forEach(([key, value]) => {
+const sanitizedKey = key.replace(/[^a-zA-Z0-9]/g, '_');
+const uniqueId = parentId ? `${parentId}_${sanitizedKey}` : sanitizedKey;
+const isNested = typeof value === 'object' && value !== null && !Array.isArray(value);
+
+if (isNested) {
+// This is a parent accordion with children
+html += `<button class="accordion" onclick="openAccordion(event)">${key}</button>`;
+html += `<div class="panel">`;
+html += generateAccordionHTML(value, uniqueId);
+html += `</div>`;
+} else {
+// This is a leaf node with content
+html += `<button class="accordion" onclick="openAccordion(event)">${key}</button>`;
+html += `<div class="panel" id="${uniqueId}Display">`;
+html += `<p>${value}</p>`;
+html += `</div>`;
+}
+});
+
+return html;
+}
+
+// Populate interventions accordion from JSON
+function populateInterventions(interventionsData) {
+const interventionsTab = document.getElementById('Interventions_TAB');
+if (!interventionsTab) return;
+
+// Clear existing content
+interventionsTab.innerHTML = '';
+
+// Generate accordion HTML from data
+const accordionHTML = generateAccordionHTML(interventionsData);
+
+// Create a wrapper div and add the generated HTML
+const wrapper = document.createElement('div');
+wrapper.innerHTML = accordionHTML;
+interventionsTab.appendChild(wrapper);
+}
+
 // Tab switching
 function openTab(evt, tabName, group = 'tab') {
 const tabcontent = document.getElementsByClassName(group + "content");

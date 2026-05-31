@@ -49,5 +49,49 @@
     "Patient Transport": "Patient transport details here",
     "Triage Report": "Triage details here",
     "Patient Offloaded": "Patient offload details here"
+  },
+  "Interventions": {
+    "Airway/Breathing": {
+      "ETCO2": "End-tidal CO2 monitoring details",
+      "Oxygen Delivery": "Oxygen delivery methods and details",
+      "Airway": "Airway management procedures",
+      "Bronchoconstriction": "Bronchoconstriction treatment",
+      "Allergic Reaction": "Allergic reaction management",
+      "Croup": "Croup treatment details",
+      "Tension Pneumothorax": "Tension pneumothorax management",
+      "CPAP": "CPAP therapy details"
+    },
+    "Cardiac/Circulation": {
+      "Cardiac Arrest": "CPR and cardiac arrest protocols",
+      "Defibrillation": "Defibrillation procedures",
+      "ACLS": "Advanced Cardiac Life Support",
+      "ROSC": "Return of Spontaneous Circulation",
+      "Ischemia": "Ischemia management",
+      "Dysrhythmia": {
+        "Tachydysrhythmia": "Tachycardia rhythm management",
+        "Bradydysrhythmia": "Bradycardia rhythm management"
+      },
+      "Hypokalemia": "Hypokalemia treatment",
+      "IV Fluid Therapy": "IV fluid therapy protocols",
+      "Traumatic Hemorrhage": "Hemorrhage control techniques"
+    },
+    "Level of Consciousness": {
+      "Hypoglycemia": "Hypoglycemia management",
+      "Seizure": "Seizure protocols",
+      "Opioid Overdose": "Opioid overdose reversal"
+    },
+    "Pain/Sedation/Nausea": {
+      "Analgesia": "Pain management",
+      "Combative Patient": {
+        "Pre-Sedation": "Pre-sedation assessment",
+        "Post-Sedation": "Post-sedation care"
+      },
+      "Procedural Sedation": "Procedural sedation guidelines",
+      "Nausea/Vomiting": "Anti-nausea management"
+    },
+    "Procedural": {
+      "Emergency Childbirth": "Emergency childbirth procedures",
+      "Lateral Patellar Dislocation Reduction": "Joint reduction techniques"
+    }
   }
 }
