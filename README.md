@@ -168,7 +168,6 @@
     <div id="Demographics_TAB" class="tabcontent">
         <h3>Demographics</h3>
     </div>
-
 </body>
     <script>
         // Load Data.json
