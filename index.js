@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", (e) => {
-  fetch('data.json')
+  fetch('Data.json')
   .then(response => response.json())
   .then(data => {
     // Now you can use the data to populate your HTML
