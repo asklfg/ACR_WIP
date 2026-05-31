@@ -51,7 +51,6 @@ container.appendChild(itemDiv);
 // Generate accordion HTML recursively from JSON data
 function generateAccordionHTML(data, parentId = '') {
 let html = '';
-let counter = 0;
 
 Object.entries(data).forEach(([key, value]) => {
 const sanitizedKey = key.replace(/[^a-zA-Z0-9]/g, '_');
