@@ -41,12 +41,10 @@ container.appendChild(itemDiv);
 // Generate accordion HTML recursively from JSON data
 function generateAccordionHTML(data, parentId = '') {
 let html = '';
-
 Object.entries(data).forEach(([key, value]) => {
 const sanitizedKey = key.replace(/[^a-zA-Z0-9]/g, '_');
 const uniqueId = parentId ? `${parentId}_${sanitizedKey}` : sanitizedKey;
 const isNested = typeof value === 'object' && value !== null && !Array.isArray(value);
-
 if (isNested) {
 // This is a parent accordion with children
 html += `<button class="accordion" onclick="openAccordion(event)">${key}</button>`;
@@ -61,21 +59,16 @@ html += `<p>${value}</p>`;
 html += `</div>`;
 }
 });
-
 return html;
 }
-
 // Populate interventions accordion from JSON
 function populateInterventions(interventionsData) {
 const interventionsTab = document.getElementById('Interventions_TAB');
 if (!interventionsTab) return;
-
 // Clear existing content
 interventionsTab.innerHTML = '';
-
 // Generate accordion HTML from data
 const accordionHTML = generateAccordionHTML(interventionsData);
-
 // Create a wrapper div and add the generated HTML
 const wrapper = document.createElement('div');
 wrapper.innerHTML = accordionHTML;
