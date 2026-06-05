@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACR Assessment Tool</title>
-    <link rel="stylesheet" href="assets/css/style.scss">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="tab">
@@ -34,6 +34,6 @@
 <div id="Demographics_TAB" class="tabcontent">
     <h3>Demographics</h3>
 </div>
-    <script src="Index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
