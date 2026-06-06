@@ -52,7 +52,10 @@
   },
   "Interventions": {
     "Airway/Breathing": {
-      "ETCO2": "End-tidal CO2 monitoring details",
+      "ETCO2": {
+        "Waveform": "ETCO2 waveform interpretation",
+        "Numeric": "ETCO2 numeric values and significance"
+      },
       "Oxygen Delivery": "Oxygen delivery methods and details",
       "Airway": "Airway management procedures",
       "Bronchoconstriction": "Bronchoconstriction treatment",
