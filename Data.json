@@ -1,12 +1,12 @@
 {
   "General_ACR": {
-    "General Appearance": "Pt. found —, A - patent, B - adequate, c - intact. Pt. A&Ox3. Pt. dressed appropriately.",
-    "General Physical Exam": {
-      "Head/Neck": "No obvious signs of trauma noted, Pt.'s airway patent, Pt. denies headache, dizziness, blurred vision, or lightheadedness, Pt. voices no other concerns or complaints at this time.",
-      "Chest": "No obvious signs of trauma noted, Good air entry bilat. w Lungs clear on auscultation, Pt. denies SOB or difficulty breathing, Pt. voices no other concerns or complaints at this time.",
-      "Abdomen": "No obvious signs of trauma noted, Abdomen soft and non-tender on palp., No distension noted, Pt. denies N/V or GI upset, Pt. voices no other concerns or complaints at this time.",
-      "Back/Pelvis": "No obvious signs of trauma noted, Pt. denies any GU symptoms, Pt. denies any back pain, Pt. voices no other concerns or complaints at this time.",
-      "Extremities": "No obvious signs of trauma noted, Pt. voices no other concerns or complaints at this time."
+    "Appearance":"Pt. found —, A - patent, B - adequate, c - intact. Pt. A&Ox3. Pt. dressed appropriately.",
+    "Physical Exam": {
+      "Head/Neck":"No obvious signs of trauma noted, Pt.'s airway patent, Pt. denies headache, dizziness, blurred vision, or lightheadedness, Pt. voices no other concerns or complaints at this time.",
+      "Chest":"No obvious signs of trauma noted, Good air entry bilat. w Lungs clear on auscultation, Pt. denies SOB or difficulty breathing, Pt. voices no other concerns or complaints at this time.",
+      "Abdomen":"No obvious signs of trauma noted, Abdomen soft and non-tender on palp., No distension noted, Pt. denies N/V or GI upset, Pt. voices no other concerns or complaints at this time.",
+      "Back/Pelvis":"No obvious signs of trauma noted, Pt. denies any GU symptoms, Pt. denies any back pain, Pt. voices no other concerns or complaints at this time.",
+      "Extremities":"No obvious signs of trauma noted, Pt. voices no other concerns or complaints at this time."
     },
     "General Interventions": {
       "PPE":"Donned as appropriate.",
@@ -15,18 +15,19 @@
       "Radio Report":"Radio report given to receiving facility.",
       "Triage Report":"Report given to RN.",
       "Patient Offloaded":"Pt. off-loaded to receiving facility.",
-      "Disposition of Effects": "All of the Pt.'s belongings returned to them upon arrival at the receiving facility."
+      "Disposition of Effects":"All of the Pt.'s belongings returned to them upon arrival at the receiving facility."
     },
-    "Remarks": "Some times and Pt. weight are approximated."
+    "Remarks":"Some times and Pt. weight are approximated.",
+    "Pt. refused":"Pt. refused all assessments and interventions including transport to the hospital, Pt. was informed of the potential risks of refusing care and transport, Pt. acknowledged understanding these risks, Pt. was advised to seek medical attention if symptoms worsen or if they change their mind about seeking care."
   },
   "Trauma_ACR": {
-    "Trauma Appearance": "Pt. found —, No major hemmhorages noted, A - Patent, B - Adequate, C - Intact. Pt. A&Ox3. Pt. dressed appropriately",
-    "Trauma Physical Exam": {
-      "Head/Neck": "No CLAPS or TICS noted, No hemorrhages noted, Pt. able to rotate head 45 degrees bilat. w/o pain or discomfort, Pt. denies headache, dizziness, blurred vision, or lightheadedness, Pt. voices no other concerns or complaints at this time.",
-      "Chest": "No CLAPS or TICS noted, No hemorrhages noted, Good air entry bilat. w Lungs clear on auscultation, Pt. denies SOB or difficulty breathing, Pt. voices no other concerns or complaints at this time.",
-      "Abdomen": "No CLAPS or TICS noted, No hemorrhages noted, Abdomen soft and non-tender on palp., No distension noted, Pt. denies N/V, Pt. voices no other concerns or complaints at this time.",
-      "Back/Pelvis": "No CLAPS or TICS noted, No hemorrhages noted, Pt. denies any back pain, Pt. voices no other concerns or complaints at this time.",
-      "Extremities": "No CLAPS or TICS noted, No hemorrhages noted, All extremities are pink and warm on palp. w good capillary refill noted, Pt. denies any numbness or tingling to the extremities, Pt. voices no other concerns or complaints at this time."
+    "Appearance":"Pt. found —, No major hemmhorages noted, A - Patent, B - Adequate, C - Intact. Pt. A&Ox3. Pt. dressed appropriately",
+    "Physical Exam": {
+      "Head/Neck":"No CLAPS or TICS noted, No hemorrhages noted, Pt. able to rotate head 45 degrees bilat. w/o pain or discomfort, Pt. denies headache, dizziness, blurred vision, or lightheadedness, Pt. voices no other concerns or complaints at this time.",
+      "Chest":"No CLAPS or TICS noted, No hemorrhages noted, Good air entry bilat. w Lungs clear on auscultation, Pt. denies SOB or difficulty breathing, Pt. voices no other concerns or complaints at this time.",
+      "Abdomen":"No CLAPS or TICS noted, No hemorrhages noted, Abdomen soft and non-tender on palp., No distension noted, Pt. denies N/V, Pt. voices no other concerns or complaints at this time.",
+      "Back/Pelvis":"No CLAPS or TICS noted, No hemorrhages noted, Pt. denies any back pain, Pt. voices no other concerns or complaints at this time.",
+      "Extremities":"No CLAPS or TICS noted, No hemorrhages noted, All extremities are pink and warm on palp. w good capillary refill noted, Pt. denies any numbness or tingling to the extremities, Pt. voices no other concerns or complaints at this time."
     },
     "General Interventions": {
       "PPE":"Donned as appropriate.",
@@ -35,7 +36,7 @@
       "Radio Report":"Radio report given to receiving facility.",
       "Triage Report":"Report given to RN.",
       "Patient Offloaded":"Pt. off-loaded to receiving facility.",
-      "Disposition of Effects": "All of the Pt.'s belongings returned to them upon arrival at the receiving facility."
+      "Disposition of Effects":"All of the Pt.'s belongings returned to them upon arrival at the receiving facility."
     },
     "Trauma Interventions": {
       "Cervical Spine Immobilization (Applied)":"Cervical immobilization considered, Cervical collar applied, Tolorated by Pt.",
@@ -45,17 +46,17 @@
       "Hemostatic Dressing Applied":"Hemostatic dressing applied to —, Packed into wound, Secured with dressing and/or bandage.",
       "Pelvic Binder Applied":"Pelvic binder applied due to MOI, Tolorated by Pt."
     },
-    "Remarks": "Some times and Pt. weight are approximated.",
-    "Pt. refused": "Pt. refused all assessments and interventions including transport to the hospital, Pt. was informed of the potential risks of refusing care and transport, Pt. acknowledged understanding these risks, Pt. was advised to seek medical attention if symptoms worsen or if they change their mind about seeking care."
+    "Remarks":"Some times and Pt. weight are approximated.",
+    "Pt. refused":"Pt. refused all assessments and interventions including transport to the hospital, Pt. was informed of the potential risks of refusing care and transport, Pt. acknowledged understanding these risks, Pt. was advised to seek medical attention if symptoms worsen or if they change their mind about seeking care."
   },
   "Respiratory_ACR": {
-    "Respiratory Appearance": "appearance details here",
-    "Respiratory Physical Exam": {
-      "Head/Neck": "No obvious signs of trauma noted, Pt.'s airway patent, Pt. denies headache, dizziness, blurred vision, or lightheadedness, Pt. voices no other concerns or complaints at this time.",
-      "Chest": "No obvious signs of trauma noted, Good air entry bilat. w Lungs clear on auscultation, Pt. denies SOB or difficulty breathing, Pt. voices no other concerns or complaints at this time.",
-      "Abdomen": "No obvious signs of trauma noted, Abdomen soft and non-tender on palp., No distension noted, Pt. denies N/V or GI upset, Pt. voices no other concerns or complaints at this time.",
-      "Back/Pelvis": "No obvious signs of trauma noted, Pt. denies any back pain, Pt. voices no other concerns or complaints at this time.",
-      "Extremities": "No obvious signs of trauma noted, Pt. voices no other concerns or complaints at this time."
+    "Appearance":"appearance details here",
+    "Physical Exam": {
+      "Head/Neck":"No obvious signs of trauma noted, Pt.'s airway patent, Pt. denies headache, dizziness, blurred vision, or lightheadedness, Pt. voices no other concerns or complaints at this time.",
+      "Chest":"No obvious signs of trauma noted, Good air entry bilat. w Lungs clear on auscultation, Pt. denies SOB or difficulty breathing, Pt. voices no other concerns or complaints at this time.",
+      "Abdomen":"No obvious signs of trauma noted, Abdomen soft and non-tender on palp., No distension noted, Pt. denies N/V or GI upset, Pt. voices no other concerns or complaints at this time.",
+      "Back/Pelvis":"No obvious signs of trauma noted, Pt. denies any back pain, Pt. voices no other concerns or complaints at this time.",
+      "Extremities":"No obvious signs of trauma noted, Pt. voices no other concerns or complaints at this time."
     },
     "General Interventions": {
       "PPE":"Donned as appropriate.",
@@ -64,26 +65,26 @@
       "Radio Report":"Radio report given to receiving facility.",
       "Triage Report":"Report given to RN.",
       "Patient Offloaded":"Pt. off-loaded to receiving facility.",
-      "Disposition of Effects": "All of the Pt.'s belongings returned to them upon arrival at the receiving facility."
+      "Disposition of Effects":"All of the Pt.'s belongings returned to them upon arrival at the receiving facility."
     },
     "Respiratory Interventions": {
-      "ETCO2 (Normal)": "RR:—, Normal waveform noted.",
-      "ETCO2 (Bronchospasm)": "RR:—, Bronchospasm noted on waveform.",
-      "ETCO2 (Hypoventilation)": "RR:—, Hypoventilation noted on waveform.",
-      "ETCO2 (Hyperventilation)": "RR:—, Hyperventilation noted on waveform.",
-      "ETCO2 (Apnea)": "RR:—, Apnea noted on waveform."
+      "ETCO2 (Normal)":"RR:—, Normal waveform noted.",
+      "ETCO2 (Bronchospasm)":"RR:—, Bronchospasm noted on waveform.",
+      "ETCO2 (Hypoventilation)":"RR:—, Hypoventilation noted on waveform.",
+      "ETCO2 (Hyperventilation)":"RR:—, Hyperventilation noted on waveform.",
+      "ETCO2 (Apnea)":"RR:—, Apnea noted on waveform."
     },
-    "Remarks": "Some times and Pt. weight are approximated.",
-    "Pt. refused": "Pt. refused all assessments and interventions including transport to the hospital, Pt. was informed of the potential risks of refusing care and transport, Pt. acknowledged understanding these risks, Pt. was advised to seek medical attention if symptoms worsen or if they change their mind about seeking care."
+    "Remarks":"Some times and Pt. weight are approximated.",
+    "Pt. refused":"Pt. refused all assessments and interventions including transport to the hospital, Pt. was informed of the potential risks of refusing care and transport, Pt. acknowledged understanding these risks, Pt. was advised to seek medical attention if symptoms worsen or if they change their mind about seeking care."
   },
   "Refusal_ACR": {
-    "Appearance": "appearance details here",
+    "Appearance":"appearance details here",
     "Physical Exam": {
-      "Head/Neck": "No obvious signs of trauma noted, Pt. refuses all assessments, Pt. voices no concerns or complaints at this time.",
-      "Chest": "No obvious signs of trauma noted, Pt. refuses all assessments, Pt. voices no concerns or complaints at this time.",
-      "Abdomen": "No obvious signs of trauma noted, Pt. refuses all assessments, Pt. voices no concerns or complaints at this time.",
-      "Back/Pelvis": "No obvious signs of trauma noted, Pt. refuses all assessments, Pt. voices no concerns or complaints at this time.",
-      "Extremities": "No obvious signs of trauma noted, Pt. refuses all assessments, Pt. voices no concerns or complaints at this time."
+      "Head/Neck":"No obvious signs of trauma noted, Pt. refuses all assessments, Pt. voices no concerns or complaints at this time.",
+      "Chest":"No obvious signs of trauma noted, Pt. refuses all assessments, Pt. voices no concerns or complaints at this time.",
+      "Abdomen":"No obvious signs of trauma noted, Pt. refuses all assessments, Pt. voices no concerns or complaints at this time.",
+      "Back/Pelvis":"No obvious signs of trauma noted, Pt. refuses all assessments, Pt. voices no concerns or complaints at this time.",
+      "Extremities":"No obvious signs of trauma noted, Pt. refuses all assessments, Pt. voices no concerns or complaints at this time."
     },
     "General Interventions": {
       "PPE":"Donned as appropriate.",
@@ -92,56 +93,56 @@
       "Radio Report":"Radio report given to receiving facility.",
       "Triage Report":"Report given to RN.",
       "Patient Offloaded":"Pt. off-loaded to receiving facility.",
-      "Disposition of Effects": "All of the Pt.'s belongings returned to them upon arrival at the receiving facility."
+      "Disposition of Effects":"All of the Pt.'s belongings returned to them upon arrival at the receiving facility."
     },
-    "Remarks": "Some times and Pt. weight are approximated.",
-    "Pt. refused": "Pt. refused all assessments and interventions including transport to the hospital, Pt. was informed of the potential risks of refusing care and transport, Pt. acknowledged understanding these risks, Pt. was advised to seek medical attention if symptoms worsen or if they change their mind about seeking care."
+    "Remarks":"Some times and Pt. weight are approximated.",
+    "Pt. refused":"Pt. refused all assessments and interventions including transport to the hospital, Pt. was informed of the potential risks of refusing care and transport, Pt. acknowledged understanding these risks, Pt. was advised to seek medical attention if symptoms worsen or if they change their mind about seeking care."
   },
   "Interventions": {
     "Airway/Breathing": {
       "ETCO2": {
-        "Waveform": "ETCO2 waveform interpretation",
-        "Numeric": "ETCO2 numeric values and significance"
+        "Waveform":"ETCO2 waveform interpretation",
+        "Numeric":"ETCO2 numeric values and significance"
       },
-      "Oxygen Delivery": "Oxygen delivery methods and details",
-      "Airway": "Airway management procedures",
-      "Bronchoconstriction": "Bronchoconstriction treatment",
-      "Allergic Reaction": "Allergic reaction management",
-      "Croup": "Croup treatment details",
-      "Tension Pneumothorax": "Tension pneumothorax management",
-      "CPAP": "CPAP therapy details"
+      "Oxygen Delivery":"Oxygen delivery methods and details",
+      "Airway":"Airway management procedures",
+      "Bronchoconstriction":"Bronchoconstriction treatment",
+      "Allergic Reaction":"Allergic reaction management",
+      "Croup":"Croup treatment details",
+      "Tension Pneumothorax":"Tension pneumothorax management",
+      "CPAP":"CPAP therapy details"
     },
     "Cardiac/Circulation": {
-      "Cardiac Arrest": "CPR and cardiac arrest protocols",
-      "Defibrillation": "Defibrillation procedures",
-      "ACLS": "Advanced Cardiac Life Support",
-      "ROSC": "Return of Spontaneous Circulation",
-      "Ischemia": "Ischemia management",
+      "Cardiac Arrest":"CPR and cardiac arrest protocols",
+      "Defibrillation":"Defibrillation procedures",
+      "ACLS":"Advanced Cardiac Life Support",
+      "ROSC":"Return of Spontaneous Circulation",
+      "Ischemia":"Ischemia management",
       "Dysrhythmia": {
-        "Tachydysrhythmia": "Tachycardia rhythm management",
-        "Bradydysrhythmia": "Bradycardia rhythm management"
+        "Tachydysrhythmia":"Tachycardia rhythm management",
+        "Bradydysrhythmia":"Bradycardia rhythm management"
       },
-      "Hypokalemia": "Hypokalemia treatment",
-      "IV Fluid Therapy": "IV fluid therapy protocols",
-      "Traumatic Hemorrhage": "Hemorrhage control techniques"
+      "Hypokalemia":"Hypokalemia treatment",
+      "IV Fluid Therapy":"IV fluid therapy protocols",
+      "Traumatic Hemorrhage":"Hemorrhage control techniques"
     },
     "Level of Consciousness": {
-      "Hypoglycemia": "Hypoglycemia management",
-      "Seizure": "Seizure protocols",
-      "Opioid Overdose": "Opioid overdose reversal"
+      "Hypoglycemia":"Hypoglycemia management",
+      "Seizure":"Seizure protocols",
+      "Opioid Overdose":"Opioid overdose reversal"
     },
     "Pain/Sedation/Nausea": {
-      "Analgesia": "Pain management",
+      "Analgesia":"Pain management",
       "Combative Patient": {
-        "Pre-Sedation": "Pre-sedation assessment",
-        "Post-Sedation": "Post-sedation care"
+        "Pre-Sedation":"Pre-sedation assessment",
+        "Post-Sedation":"Post-sedation care"
       },
-      "Procedural Sedation": "Procedural sedation guidelines",
-      "Nausea/Vomiting": "Anti-nausea management"
+      "Procedural Sedation":"Procedural sedation guidelines",
+      "Nausea/Vomiting":"Anti-nausea management"
     },
     "Procedural": {
-      "Emergency Childbirth": "Emergency childbirth procedures",
-      "Lateral Patellar Dislocation Reduction": "Joint reduction techniques"
+      "Emergency Childbirth":"Emergency childbirth procedures",
+      "Lateral Patellar Dislocation Reduction":"Joint reduction techniques"
     }
   }
 }
