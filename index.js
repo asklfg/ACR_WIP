@@ -1,3 +1,15 @@
+// Helper function to sanitize HTML and prevent XSS
+function escapeHtml(text) {
+  const map = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  };
+  return text.replace(/[&<>"']/g, m => map[m]);
+}
+
 let AssessmentContentData = {};
 async function loadData() {
 try {
@@ -23,6 +35,7 @@ console.error('Error loading Data.json:', error);
 } 
 // Display data with copy functionality
 function displayArray(obj, container) {
+if (!container) return;
 container.innerHTML = '';
 Object.entries(obj).forEach(([key, value]) => {
 if (typeof value === 'object' && value !== null) {
@@ -31,9 +44,10 @@ header.textContent = key;
 container.appendChild(header);
 displayArray(value, container);
 } else {
-const sanitizedKey = key.replace(/[^a-zA-Z0-9]/g, '');
+const sanitizedKey = key.replace(/[^a-zA-Z0-9_-]/g, '_');
 const itemDiv = document.createElement('div');
-itemDiv.innerHTML = `${key}:<br><button class="copy-btn" data-key="${sanitizedKey}">Copy</button><input type="text" id="input-${sanitizedKey}" value="${value}">`;
+const valueStr = String(value || '');
+itemDiv.innerHTML = `${escapeHtml(key)}:<br><button class="copy-btn" data-key="${escapeHtml(sanitizedKey)}">Copy</button><input type="text" id="input-${escapeHtml(sanitizedKey)}" value="${escapeHtml(valueStr)}">`;
 container.appendChild(itemDiv);
 }
 });
@@ -42,20 +56,20 @@ container.appendChild(itemDiv);
 function generateAccordionHTML(data, parentId = '') {
 let html = '';
 Object.entries(data).forEach(([key, value]) => {
-const sanitizedKey = key.replace(/[^a-zA-Z0-9]/g, '_');
+const sanitizedKey = key.replace(/[^a-zA-Z0-9_-]/g, '_');
 const uniqueId = parentId ? `${parentId}_${sanitizedKey}` : sanitizedKey;
 const isNested = typeof value === 'object' && value !== null && !Array.isArray(value);
 if (isNested) {
 // This is a parent accordion with children
-html += `<button class="accordion" onclick="openAccordion(event)">${key}</button>`;
+html += `<button class="accordion" onclick="openAccordion(event)">${escapeHtml(key)}</button>`;
 html += `<div class="panel">`;
 html += generateAccordionHTML(value, uniqueId);
 html += `</div>`;
 } else {
 // This is a leaf node with content
-html += `<button class="accordion" onclick="openAccordion(event)">${key}</button>`;
-html += `<div class="panel" id="${uniqueId}Display">`;
-html += `<p>${value}</p>`;
+html += `<button class="accordion" onclick="openAccordion(event)">${escapeHtml(key)}</button>`;
+html += `<div class="panel" id="${escapeHtml(uniqueId)}Display">`;
+html += `<p>${escapeHtml(String(value || ''))}</p>`;
 html += `</div>`;
 }
 });
@@ -64,7 +78,7 @@ return html;
 // Populate interventions accordion from JSON
 function populateInterventions(interventionsData) {
 const interventionsTab = document.getElementById('Interventions_TAB');
-if (!interventionsTab) return;
+if (!interventionsTab || !interventionsData) return;
 // Clear existing content
 interventionsTab.innerHTML = '';
 // Generate accordion HTML from data
@@ -76,6 +90,7 @@ interventionsTab.appendChild(wrapper);
 }
 // Tab switching
 function openTab(evt, tabName, group = 'tab') {
+if (!evt || !evt.currentTarget) return;
 const tabcontent = document.getElementsByClassName(group + "content");
 for (let i = 0; i < tabcontent.length; i++) {
 tabcontent[i].style.display = "none";
@@ -97,12 +112,14 @@ btn.removeEventListener('click', handleCopy);
 btn.addEventListener('click', handleCopy);
 });
 }  
-function handleCopy() {
-const key = this.dataset.key;
+function handleCopy(event) {
+const key = event.currentTarget.dataset.key;
 const input = document.getElementById(`input-${key}`);
 if (input) {
 input.select();
-navigator.clipboard.writeText(input.value);
+navigator.clipboard.writeText(input.value).catch(err => {
+console.error('Failed to copy:', err);
+});
 }
 }  
 function updateAncestorPanelHeights(panel) {
@@ -158,9 +175,11 @@ setTimeout(() => updateAncestorPanelHeights(currentPanel), 150);
 }        
 // Show assessment content from loaded Data.json
 function showAssessmentContent(event, category) {
+if (!event) return;
 event.preventDefault();            
 // Update content area
 const contentArea = document.getElementById('AssessmentContentArea');
+if (!contentArea) return;
 contentArea.innerHTML = '';          
 // Display the data using the displayArray function
 if (AssessmentContentData[category]) {
@@ -173,7 +192,9 @@ const menuLinks = document.querySelectorAll('#AssessmentMenu li a');
 menuLinks.forEach(link => {
 link.classList.remove('active');
 });
+if (event.target) {
 event.target.classList.add('active');
+}
 }       
 function filterAssessmentMenu() {
 const input = document.getElementById('AssessmentSearch');
