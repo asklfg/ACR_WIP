@@ -5,7 +5,7 @@ const response = await fetch('Data.json');
 const data = await response.json();
 // Map Data.json structure to UI
 AssessmentContentData = {
-'General_ACR': data.General_ACR,
+'General_ACR': data.General_ACR.General_Physical_Exam,
 'Trauma_ACR': data.Trauma_ACR,
 'Respiratory_ACR': data.Respiratory_ACR,
 'Refusal_ACR': data.Refusal_ACR,

@@ -1,7 +1,7 @@
 {
   "General_ACR": {
-    "Appearance": "Pt. found —, A - patent, B - adequate, c - intact. Pt. A&Ox3. Pt. dressed appropriately.",
-    "Physical Exam": {
+    "General Appearance": "Pt. found —, A - patent, B - adequate, c - intact. Pt. A&Ox3. Pt. dressed appropriately.",
+    "General Physical Exam": {
       "Head/Neck": "No obvious signs of trauma noted, Pt.'s airway patent, Pt. denies headache, dizziness, blurred vision, or lightheadedness, Pt. voices no other concerns or complaints at this time.",
       "Chest": "No obvious signs of trauma noted, Good air entry bilat. w Lungs clear on auscultation, Pt. denies SOB or difficulty breathing, Pt. voices no other concerns or complaints at this time.",
       "Abdomen": "No obvious signs of trauma noted, Abdomen soft and non-tender on palp., No distension noted, Pt. denies N/V or GI upset, Pt. voices no other concerns or complaints at this time.",
@@ -20,8 +20,8 @@
     "Remarks": "Some times and Pt. weight are approximated."
   },
   "Trauma_ACR": {
-    "Appearance": "Pt. found —, No major hemmhorages noted, A - Patent, B - Adequate, C - Intact. Pt. A&Ox3. Pt. dressed appropriately",
-    "Physical Exam": {
+    "Trauma Appearance": "Pt. found —, No major hemmhorages noted, A - Patent, B - Adequate, C - Intact. Pt. A&Ox3. Pt. dressed appropriately",
+    "Trauma Physical Exam": {
       "Head/Neck": "No CLAPS or TICS noted, No hemorrhages noted, Pt. able to rotate head 45 degrees bilat. w/o pain or discomfort, Pt. denies headache, dizziness, blurred vision, or lightheadedness, Pt. voices no other concerns or complaints at this time.",
       "Chest": "No CLAPS or TICS noted, No hemorrhages noted, Good air entry bilat. w Lungs clear on auscultation, Pt. denies SOB or difficulty breathing, Pt. voices no other concerns or complaints at this time.",
       "Abdomen": "No CLAPS or TICS noted, No hemorrhages noted, Abdomen soft and non-tender on palp., No distension noted, Pt. denies N/V, Pt. voices no other concerns or complaints at this time.",
@@ -49,8 +49,8 @@
     "Pt. refused": "Pt. refused all assessments and interventions including transport to the hospital, Pt. was informed of the potential risks of refusing care and transport, Pt. acknowledged understanding these risks, Pt. was advised to seek medical attention if symptoms worsen or if they change their mind about seeking care."
   },
   "Respiratory_ACR": {
-    "Appearance": "appearance details here",
-    "Physical Exam": {
+    "Respiratory Appearance": "appearance details here",
+    "Respiratory Physical Exam": {
       "Head/Neck": "No obvious signs of trauma noted, Pt.'s airway patent, Pt. denies headache, dizziness, blurred vision, or lightheadedness, Pt. voices no other concerns or complaints at this time.",
       "Chest": "No obvious signs of trauma noted, Good air entry bilat. w Lungs clear on auscultation, Pt. denies SOB or difficulty breathing, Pt. voices no other concerns or complaints at this time.",
       "Abdomen": "No obvious signs of trauma noted, Abdomen soft and non-tender on palp., No distension noted, Pt. denies N/V or GI upset, Pt. voices no other concerns or complaints at this time.",
