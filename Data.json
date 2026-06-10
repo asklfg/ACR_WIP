@@ -1,54 +1,101 @@
 {
   "General_ACR": {
-    "Appearance": "appearance details here",
+    "Appearance": "Pt. found —, A - patent, B - adequate, c - intact. Pt. A&Ox3. Pt. dressed appropriately.",
     "Physical Exam": {
-      "Head/Neck": "head and neck details here",
-      "Chest": "chest details here",
-      "Abdomen": "abdomen details here",
-      "Back/Pelvis": "back and pelvis details here",
-      "Extremities": "extremities details here"
+      "Head/Neck": "No obvious signs of trauma noted, Pt.'s airway patent, Pt. denies headache, dizziness, blurred vision, or lightheadedness, Pt. voices no other concerns or complaints at this time.",
+      "Chest": "No obvious signs of trauma noted, Good air entry bilat. w Lungs clear on auscultation, Pt. denies SOB or difficulty breathing, Pt. voices no other concerns or complaints at this time.",
+      "Abdomen": "No obvious signs of trauma noted, Abdomen soft and non-tender on palp., No distension noted, Pt. denies N/V or GI upset, Pt. voices no other concerns or complaints at this time.",
+      "Back/Pelvis": "No obvious signs of trauma noted, Pt. denies any GU symptoms, Pt. denies any back pain, Pt. voices no other concerns or complaints at this time.",
+      "Extremities": "No obvious signs of trauma noted, Pt. voices no other concerns or complaints at this time."
     },
-    "Remarks": "general remarks here"
+    "General Interventions": {
+      "PPE":"Donned as appropriate.",
+      "Patient Assessment":"See Px.",
+      "Pt. Transport":"Pt. secured to stretcher with straps.",
+      "Radio Report":"Radio report given to receiving facility.",
+      "Triage Report":"Report given to RN.",
+      "Patient Offloaded":"Pt. off-loaded to receiving facility.",
+      "Disposition of Effects": "All of the Pt.'s belongings returned to them upon arrival at the receiving facility."
+    },
+    "Remarks": "Some times and Pt. weight are approximated."
   },
   "Trauma_ACR": {
-    "Appearance": "appearance details here",
+    "Appearance": "Pt. found —, No major hemmhorages noted, A - Patent, B - Adequate, C - Intact. Pt. A&Ox3. Pt. dressed appropriately",
     "Physical Exam": {
-      "Head/Neck": "head and neck details here",
-      "Chest": "chest details here",
-      "Abdomen": "abdomen details here",
-      "Back/Pelvis": "back and pelvis details here",
-      "Extremities": "extremities details here"
+      "Head/Neck": "No CLAPS or TICS noted, No hemorrhages noted, Pt. able to rotate head 45 degrees bilat. w/o pain or discomfort, Pt. denies headache, dizziness, blurred vision, or lightheadedness, Pt. voices no other concerns or complaints at this time.",
+      "Chest": "No CLAPS or TICS noted, No hemorrhages noted, Good air entry bilat. w Lungs clear on auscultation, Pt. denies SOB or difficulty breathing, Pt. voices no other concerns or complaints at this time.",
+      "Abdomen": "No CLAPS or TICS noted, No hemorrhages noted, Abdomen soft and non-tender on palp., No distension noted, Pt. denies N/V, Pt. voices no other concerns or complaints at this time.",
+      "Back/Pelvis": "No CLAPS or TICS noted, No hemorrhages noted, Pt. denies any back pain, Pt. voices no other concerns or complaints at this time.",
+      "Extremities": "No CLAPS or TICS noted, No hemorrhages noted, All extremities are pink and warm on palp. w good capillary refill noted, Pt. denies any numbness or tingling to the extremities, Pt. voices no other concerns or complaints at this time."
     },
-    "Remarks": "trauma remarks here"
+    "General Interventions": {
+      "PPE":"Donned as appropriate.",
+      "Patient Assessment":"See Px.",
+      "Pt. Transport":"Pt. secured to stretcher with straps.",
+      "Radio Report":"Radio report given to receiving facility.",
+      "Triage Report":"Report given to RN.",
+      "Patient Offloaded":"Pt. off-loaded to receiving facility.",
+      "Disposition of Effects": "All of the Pt.'s belongings returned to them upon arrival at the receiving facility."
+    },
+    "Trauma Interventions": {
+      "Cervical Spine Immobilization (Applied)":"Cervical immobilization considered, Cervical collar applied, Tolorated by Pt.",
+      "Cervical Spine Immobilization (Not Applied)":"Cervical immobilization considered, No high-risk factors identified, MOI deemed low-risk, Pt. able to rotate head 45 degrees bilat. w/o pain or discomfort., Cervical spine immobilization deemed not appropriate.",
+      "Dressing Applied":"— applied to —, secured w —.",
+      "TQ Applied":"TQ applied to the most distal appropriate site, Placed along the single long bone above the injury at —, Tightened until hemorrhage ceased, Pulse absent distal to the tourniquet.",
+      "Hemostatic Dressing Applied":"Hemostatic dressing applied to —, Packed into wound, Secured with dressing and/or bandage.",
+      "Pelvic Binder Applied":"Pelvic binder applied due to MOI, Tolorated by Pt."
+    },
+    "Remarks": "Some times and Pt. weight are approximated.",
+    "Pt. refused": "Pt. refused all assessments and interventions including transport to the hospital, Pt. was informed of the potential risks of refusing care and transport, Pt. acknowledged understanding these risks, Pt. was advised to seek medical attention if symptoms worsen or if they change their mind about seeking care."
   },
   "Respiratory_ACR": {
     "Appearance": "appearance details here",
     "Physical Exam": {
-      "Head/Neck": "head and neck details here",
-      "Chest": "chest details here",
-      "Abdomen": "abdomen details here",
-      "Back/Pelvis": "back and pelvis details here",
-      "Extremities": "extremities details here"
+      "Head/Neck": "No obvious signs of trauma noted, Pt.'s airway patent, Pt. denies headache, dizziness, blurred vision, or lightheadedness, Pt. voices no other concerns or complaints at this time.",
+      "Chest": "No obvious signs of trauma noted, Good air entry bilat. w Lungs clear on auscultation, Pt. denies SOB or difficulty breathing, Pt. voices no other concerns or complaints at this time.",
+      "Abdomen": "No obvious signs of trauma noted, Abdomen soft and non-tender on palp., No distension noted, Pt. denies N/V or GI upset, Pt. voices no other concerns or complaints at this time.",
+      "Back/Pelvis": "No obvious signs of trauma noted, Pt. denies any back pain, Pt. voices no other concerns or complaints at this time.",
+      "Extremities": "No obvious signs of trauma noted, Pt. voices no other concerns or complaints at this time."
     },
-    "Remarks": "respiratory remarks here"
+    "General Interventions": {
+      "PPE":"Donned as appropriate.",
+      "Patient Assessment":"See Px.",
+      "Pt. Transport":"Pt. secured to stretcher with straps.",
+      "Radio Report":"Radio report given to receiving facility.",
+      "Triage Report":"Report given to RN.",
+      "Patient Offloaded":"Pt. off-loaded to receiving facility.",
+      "Disposition of Effects": "All of the Pt.'s belongings returned to them upon arrival at the receiving facility."
+    },
+    "Respiratory Interventions": {
+      "ETCO2 (Normal)": "RR:—, Normal waveform noted.",
+      "ETCO2 (Bronchospasm)": "RR:—, Bronchospasm noted on waveform.",
+      "ETCO2 (Hypoventilation)": "RR:—, Hypoventilation noted on waveform.",
+      "ETCO2 (Hyperventilation)": "RR:—, Hyperventilation noted on waveform.",
+      "ETCO2 (Apnea)": "RR:—, Apnea noted on waveform."
+    },
+    "Remarks": "Some times and Pt. weight are approximated.",
+    "Pt. refused": "Pt. refused all assessments and interventions including transport to the hospital, Pt. was informed of the potential risks of refusing care and transport, Pt. acknowledged understanding these risks, Pt. was advised to seek medical attention if symptoms worsen or if they change their mind about seeking care."
   },
   "Refusal_ACR": {
     "Appearance": "appearance details here",
     "Physical Exam": {
-      "Head/Neck": "head and neck details here",
-      "Chest": "chest details here",
-      "Abdomen": "abdomen details here",
-      "Back/Pelvis": "back and pelvis details here",
-      "Extremities": "extremities details here"
+      "Head/Neck": "No obvious signs of trauma noted, Pt. refuses all assessments, Pt. voices no concerns or complaints at this time.",
+      "Chest": "No obvious signs of trauma noted, Pt. refuses all assessments, Pt. voices no concerns or complaints at this time.",
+      "Abdomen": "No obvious signs of trauma noted, Pt. refuses all assessments, Pt. voices no concerns or complaints at this time.",
+      "Back/Pelvis": "No obvious signs of trauma noted, Pt. refuses all assessments, Pt. voices no concerns or complaints at this time.",
+      "Extremities": "No obvious signs of trauma noted, Pt. refuses all assessments, Pt. voices no concerns or complaints at this time."
     },
-    "Remarks": "refusal remarks here"
-  },
-  "Generic Procedures": {
-    "PPE": "PPE details here",
-    "Patient Assessment": "Patient assessment details here",
-    "Patient Transport": "Patient transport details here",
-    "Triage Report": "Triage details here",
-    "Patient Offloaded": "Patient offload details here"
+    "General Interventions": {
+      "PPE":"Donned as appropriate.",
+      "Patient Assessment":"See Px.",
+      "Pt. Transport":"Pt. secured to stretcher with straps.",
+      "Radio Report":"Radio report given to receiving facility.",
+      "Triage Report":"Report given to RN.",
+      "Patient Offloaded":"Pt. off-loaded to receiving facility.",
+      "Disposition of Effects": "All of the Pt.'s belongings returned to them upon arrival at the receiving facility."
+    },
+    "Remarks": "Some times and Pt. weight are approximated.",
+    "Pt. refused": "Pt. refused all assessments and interventions including transport to the hospital, Pt. was informed of the potential risks of refusing care and transport, Pt. acknowledged understanding these risks, Pt. was advised to seek medical attention if symptoms worsen or if they change their mind about seeking care."
   },
   "Interventions": {
     "Airway/Breathing": {
