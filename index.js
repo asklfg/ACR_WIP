@@ -38,41 +38,44 @@ function displayArray(obj, container) {
         }
     });
 }
-// Generate accordion HTML recursively from JSON data
-function generateAccordionHTML(data, parentId = '') {
+// Generate nested accordion HTML from JSON data
+function generateNestedAccordionHTML(data) {
     let html = '';
     Object.entries(data).forEach(([key, value]) => {
-        const sanitizedKey = key.replace(/[^a-zA-Z0-9]/g, '_');
-        const uniqueId = parentId ? `${parentId}_${sanitizedKey}` : sanitizedKey;
         const isNested = typeof value === 'object' && value !== null && !Array.isArray(value);
         if (isNested) {
-            // This is a parent accordion with children
-            html += `<button class="accordion" onclick="openAccordion(event)">${key}</button>`;
+            // This is a parent item with children
+            html += `<button class="accordion sub-accordion" onclick="openAccordion(event)">${key}</button>`;
             html += `<div class="panel">`;
-            html += generateAccordionHTML(value, uniqueId);
+            html += generateNestedAccordionHTML(value);
             html += `</div>`;
         } else {
             // This is a leaf node with content
-            html += `<button class="accordion" onclick="openAccordion(event)">${key}</button>`;
-            html += `<div class="panel" id="${uniqueId}Display">`;
-            html += `<p>${value}</p>`;
-            html += `</div>`;
+            html += `<button class="accordion sub-accordion" onclick="openAccordion(event)">${key}</button>`;
+            html += `<div class="panel"><p>${value}</p></div>`;
         }
     });
     return html;
 }
 // Populate interventions accordion from JSON
 function populateInterventions(interventionsData) {
-    const interventionsTab = document.getElementById('Interventions_TAB');
-    if (!interventionsTab) return;
-    // Clear existing content
-    interventionsTab.innerHTML = '';
-    // Generate accordion HTML from data
-    const accordionHTML = generateAccordionHTML(interventionsData);
-    // Create a wrapper div and add the generated HTML
-    const wrapper = document.createElement('div');
-    wrapper.innerHTML = accordionHTML;
-    interventionsTab.appendChild(wrapper);
+    // Map category keys to their HTML element IDs
+    const categoryMap = {
+        'Airway/Breathing': 'Airway_Breathing_content',
+        'Cardiac/Circulation': 'Cardiac_Circulation_content',
+        'Level of Consciousness': 'Level_of_Consciousness_content',
+        'Pain/Sedation/Nausea': 'Pain_Sedation_Nausea_content',
+        'Procedural': 'Procedural_content'
+    };
+    
+    // Populate each category
+    Object.entries(categoryMap).forEach(([categoryName, elementId]) => {
+        const panel = document.getElementById(elementId);
+        if (panel && interventionsData[categoryName]) {
+            const nestedHTML = generateNestedAccordionHTML(interventionsData[categoryName]);
+            panel.innerHTML = nestedHTML;
+        }
+    });
 }
 // Tab switching
 function openTab(evt, tabName, group = 'tab') {

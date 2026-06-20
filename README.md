@@ -32,6 +32,20 @@
         </div>
     </div>
     <div id="Interventions_TAB" class="tabcontent">
+        <button class="accordion" onclick="openAccordion(event)">Airway/Breathing</button>
+        <div class="panel" id="Airway_Breathing_content"></div>
+
+        <button class="accordion" onclick="openAccordion(event)">Cardiac/Circulation</button>
+        <div class="panel" id="Cardiac_Circulation_content"></div>
+
+        <button class="accordion" onclick="openAccordion(event)">Level of Consciousness</button>
+        <div class="panel" id="Level_of_Consciousness_content"></div>
+
+        <button class="accordion" onclick="openAccordion(event)">Pain/Sedation/Nausea</button>
+        <div class="panel" id="Pain_Sedation_Nausea_content"></div>
+
+        <button class="accordion" onclick="openAccordion(event)">Procedural</button>
+        <div class="panel" id="Procedural_content"></div>
     </div>
     <div id="Demographics_TAB" class="tabcontent">
         <h3>Demographics</h3>
