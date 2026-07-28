@@ -2,7 +2,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACR Assessment Tool</title>
     <link rel="stylesheet" href="assets/css/style.scss">
 </head>
 <body>
@@ -20,6 +19,7 @@
                     <li><a onclick="showAssessmentContent(event, 'General_ACR')">General</a></li>
                     <li><a onclick="showAssessmentContent(event, 'Trauma_ACR')">Trauma</a></li>
                     <li><a onclick="showAssessmentContent(event, 'Respiratory_ACR')">Respiratory</a></li>
+                    <li><a onclick="showAssessmentContent(event, 'Cardiac_ACR')">Cardiac</a></li>
                     <li><a onclick="showAssessmentContent(event, 'Refusal_ACR')">Refusal</a></li>
                 </ul>
         </div>
